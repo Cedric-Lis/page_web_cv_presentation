@@ -120,9 +120,10 @@ function loadProjects(category) {
 
     filteredProjects.forEach((project, index) => {
         const projectCard = document.createElement('div');
-        projectCard.className = 'card overflow-hidden group project-card';
+        projectCard.className = 'card overflow-hidden group project-card transition-all duration-300';
+        projectCard.setAttribute('data-project-id', project.id);        
         projectCard.style.animationDelay = `${index * 100}ms`;
-        
+                
         projectCard.innerHTML = `
             <div class="relative h-48 bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
@@ -220,4 +221,27 @@ function showToast(title, description) {
 // Set Current Year
 function setCurrentYear() {
     document.getElementById('year').textContent = new Date().getFullYear();
+}
+
+// Scroll to specific project
+function scrollToProject(projectId) {
+    // First scroll to projects section
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Wait for scroll to complete, then highlight the project
+        setTimeout(() => {
+            const projectCard = document.querySelector(`[data-project-id="${projectId}"]`);
+            if (projectCard) {
+                // Add highlight effect
+                projectCard.classList.add('ring-2', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-900');
+                
+                // Remove highlight after 3 seconds
+                setTimeout(() => {
+                    projectCard.classList.remove('ring-2', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-900');
+                }, 3000);
+            }
+        }, 800);
+    }
 }

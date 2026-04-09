@@ -48,6 +48,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <button onclick="scrollToSection('hero')" class="text-gray-300 hover:text-cyan-400 transition-colors duration-200 text-sm font-medium">Accueil</button>
                     <button onclick="scrollToSection('about')" class="text-gray-300 hover:text-cyan-400 transition-colors duration-200 text-sm font-medium">À Propos</button>
+                    <button onclick="scrollToSection('formation')" class="text-gray-300 hover:text-cyan-400 transition-colors duration-200 text-sm font-medium">Formation</button>
                     <button onclick="scrollToSection('projects')" class="text-gray-300 hover:text-cyan-400 transition-colors duration-200 text-sm font-medium">Projets</button>
                     <button onclick="scrollToSection('skills')" class="text-gray-300 hover:text-cyan-400 transition-colors duration-200 text-sm font-medium">Compétences</button>
                     <button onclick="scrollToSection('contact')" class="text-gray-300 hover:text-cyan-400 transition-colors duration-200 text-sm font-medium">Contact</button>
@@ -69,6 +70,7 @@
             <div class="px-4 py-4 space-y-3">
                 <button onclick="scrollToSection('hero'); toggleMobileMenu()" class="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">Accueil</button>
                 <button onclick="scrollToSection('about'); toggleMobileMenu()" class="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">À Propos</button>
+                <button onclick="scrollToSection('formation'); toggleMobileMenu()" class="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">Formation</button>
                 <button onclick="scrollToSection('projects'); toggleMobileMenu()" class="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">Projets</button>
                 <button onclick="scrollToSection('skills'); toggleMobileMenu()" class="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">Compétences</button>
                 <button onclick="scrollToSection('contact'); toggleMobileMenu()" class="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">Contact</button>
@@ -105,10 +107,6 @@
 
             <!-- Main Content -->
             <div class="space-y-6">
-                <div class="inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-sm font-medium mb-4">
-                    ESME Sudria • France
-                </div>
-                
                 <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4">
                     <span class="block mb-2">Prénom</span>
                     <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">Nom</span>
@@ -214,8 +212,259 @@
         </div>
     </section>
 
+<!-- Formation Section -->
+    <section id="formation" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+                    Ma <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Formation</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Mon parcours académique et professionnel dans le domaine de l'électronique et des systèmes embarqués
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-cyan-500 to-blue-600"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Formation 1 - ESME Sudria -->
+                    <div class="relative">
+                        <div class="md:flex md:items-center">
+                            <!-- Left Content (Desktop) -->
+                            <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                                <div class="card p-6 md:ml-auto hover:scale-105 transition-transform duration-300">
+                                    <div class="flex items-center mb-4">
+                                        <div class="p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/30 mr-4">
+                                            <i data-lucide="graduation-cap" class="w-6 h-6 text-cyan-400"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-white">ESME Sudria</h3>
+                                            <p class="text-cyan-400 text-sm">2020 - 2025</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-lg font-semibold text-cyan-400 mb-3">
+                                        Diplôme d'Ingénieur - Électronique & Systèmes Embarqués
+                                    </h4>
+                                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                                        Formation complète en ingénierie électronique avec spécialisation en systèmes embarqués temps réel.
+                                    </p>
+                                    
+                                    <!-- Compétences clés -->
+                                    <div class="space-y-2 mb-4">
+                                        <div class="flex items-start text-sm">
+                                            <i data-lucide="zap" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400"><strong class="text-white">Électronique :</strong> Conception circuits, PCB, microcontrôleurs, capteurs</span>
+                                        </div>
+                                        <div class="flex items-start text-sm">
+                                            <i data-lucide="code" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400"><strong class="text-white">Programmation :</strong> C/C++, développement firmware, programmation bas niveau</span>
+                                        </div>
+                                        <div class="flex items-start text-sm">
+                                            <i data-lucide="clock" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400"><strong class="text-white">Temps réel :</strong> Conception de systèmes rapides et fiables</span>
+                                        </div>
+                                        <div class="flex items-start text-sm">
+                                            <i data-lucide="radio" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400"><strong class="text-white">Communication :</strong> Protocoles SPI, CAN, I2C, IoT</span>
+                                        </div>
+                                        <div class="flex items-start text-sm">
+                                            <i data-lucide="wrench" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400"><strong class="text-white">Projets :</strong> Construction de systèmes embarqués complets de A à Z</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Projets réalisés -->
+                                    <div class="pt-3 border-t border-cyan-500/20">
+                                        <p class="text-xs text-gray-500 mb-2">Projets majeurs :</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <a href="#project-1" onclick="scrollToProject(1)" class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs hover:bg-cyan-500/20 transition-colors cursor-pointer">
+                                                🔥 Drone Incendie
+                                            </a>
+                                            <a href="#project-2" onclick="scrollToProject(2)" class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs hover:bg-cyan-500/20 transition-colors cursor-pointer">
+                                                🐕 Brigade Cynophile
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-2 mt-4">
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">Bac +5</span>
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">CTI</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Point -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cyan-400 rounded-full border-4 border-slate-900 z-10"></div>
+
+                            <!-- Right Content (Empty on Desktop) -->
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Formation 2 - Stage Deleo -->
+                    <div class="relative">
+                        <div class="md:flex md:items-center">
+                            <!-- Left Content (Empty on Desktop) -->
+                            <div class="md:w-1/2 md:pr-12"></div>
+
+                            <!-- Timeline Point -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cyan-400 rounded-full border-4 border-slate-900 z-10"></div>
+
+                            <!-- Right Content (Desktop) -->
+                            <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                                <div class="card p-6 hover:scale-105 transition-transform duration-300">
+                                    <div class="flex items-center mb-4">
+                                        <div class="p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/30 mr-4">
+                                            <i data-lucide="briefcase" class="w-6 h-6 text-cyan-400"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-white">Deleo - Fréjus</h3>
+                                            <p class="text-cyan-400 text-sm">Stage Ingénieur 2025</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-lg font-semibold text-cyan-400 mb-3">
+                                        Conception Carte Électronique de Commande
+                                    </h4>
+                                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                                        Développement complet d'une carte électronique de commande avec interface d'affichage pour système d'air pulsé -4 à -30°C
+                                    </p>
+
+                                    <!-- Réalisations -->
+                                    <div class="space-y-2.5 mb-4">
+                                        <div class="flex items-start">
+                                            <i data-lucide="cpu" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400 text-sm"><strong class="text-white">Conception :</strong> Schéma électronique et routage PCB sous Eagle</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i data-lucide="code-2" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400 text-sm"><strong class="text-white">Firmware :</strong> Développement en C (MPLAB X IDE) pour PIC24</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i data-lucide="thermometer" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400 text-sm"><strong class="text-white">Régulation :</strong> Thermique, gestion capteurs/actionneurs, sécurités</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i data-lucide="snowflake" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400 text-sm"><strong class="text-white">Automatisation :</strong> Cycle automatique de dégivrage</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400 text-sm"><strong class="text-white">Validation :</strong> Tests fonctionnels en conditions réelles</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i data-lucide="shield-check" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span class="text-gray-400 text-sm"><strong class="text-white">Conformité :</strong> Normes REACH et RoHS respectées</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">Eagle PCB</span>
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">PIC24</span>
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">MPLAB X</span>
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">C Embedded</span>
+                                        <span class="px-2 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-xs">REACH/RoHS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formation 3 - Certifications / Autres -->
+                    <div class="relative">
+                        <div class="md:flex md:items-center">
+                            <!-- Left Content (Desktop) -->
+                            <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                                <div class="card p-6 md:ml-auto hover:scale-105 transition-transform duration-300">
+                                    <div class="flex items-center mb-4">
+                                        <div class="p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/30 mr-4">
+                                            <i data-lucide="award" class="w-6 h-6 text-cyan-400"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-white">Compétences Techniques</h3>
+                                            <p class="text-cyan-400 text-sm">Formation continue</p>
+                                        </div>
+                                    </div>
+                                    <ul class="space-y-2 text-gray-400 text-sm">
+                                        <li class="flex items-start">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span>Développement ESP32 & Arduino</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span>Protocoles IoT (LoRa, BLE, RFID)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span>Développement Mobile Flutter</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span>Vision par ordinateur (OpenCV)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                                            <span>AUTOSAR - Standards automobiles</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Point -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cyan-400 rounded-full border-4 border-slate-900 z-10"></div>
+
+                            <!-- Right Content (Empty on Desktop) -->
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Education Info -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="book-open" class="w-6 h-6 text-cyan-400 mr-3"></i>
+                        <h3 class="text-lg font-bold text-white">Spécialisations</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>• Systèmes embarqués temps réel</li>
+                        <li>• Électronique de puissance</li>
+                        <li>• Réseaux et communication IoT</li>
+                        <li>• Conception PCB et prototypage</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="globe" class="w-6 h-6 text-cyan-400 mr-3"></i>
+                        <h3 class="text-lg font-bold text-white">Langues</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex justify-between items-center">
+                            <span>Français</span>
+                            <span class="text-cyan-400">Natif</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Anglais</span>
+                            <span class="text-cyan-400">Courant (B2/C1)</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Anglais Technique</span>
+                            <span class="text-cyan-400">Professionnel</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-slate-900">
+    <section id="projects" class="py-20 bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-12">
@@ -246,7 +495,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gradient-to-b from-slate-900 to-slate-950">
+    <section id="skills" class="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
@@ -450,7 +699,7 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-semibold mb-1">Email</h4>
-                                <a href="mailto:email@example.com" class="text-gray-400 hover:text-cyan-400 transition-colors">Email</a>
+                                <a href="mailto:cedric.lismonde@sfr.fr" class="text-gray-400 hover:text-cyan-400 transition-colors">cedric.lismonde@sfr.fr</a>
                             </div>
                         </div>
                     </div>
@@ -462,7 +711,7 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-semibold mb-1">Téléphone</h4>
-                                <a href="tel:+33000000000" class="text-gray-400 hover:text-cyan-400 transition-colors">Téléphone</a>
+                                <a href="tel:+33652277388" class="text-gray-400 hover:text-cyan-400 transition-colors">+33 6 52 27 73 88</a>
                             </div>
                         </div>
                     </div>
